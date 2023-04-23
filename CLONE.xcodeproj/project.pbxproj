@@ -20,6 +20,16 @@
 		FC65D5E729F5DB8000767204 /* ENUMVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5E629F5DB8000767204 /* ENUMVIEW.swift */; };
 		FC65D5EA29F5DBD600767204 /* STATUSVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5E929F5DBD600767204 /* STATUSVIEW.swift */; };
 		FC65D5EC29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5EB29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift */; };
+		FC65D5EF29F5DD6F00767204 /* SEARCHVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5EE29F5DD6F00767204 /* SEARCHVIEW.swift */; };
+		FC65D5F129F5DD8D00767204 /* GRID.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5F029F5DD8D00767204 /* GRID.swift */; };
+		FC65D5F629F5DDF000767204 /* uploadview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5F529F5DDF000767204 /* uploadview.swift */; };
+		FC65D5F929F5DE0C00767204 /* Reels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5F829F5DE0C00767204 /* Reels.swift */; };
+		FC65D5FC29F5DE6400767204 /* addnewaccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5FB29F5DE6400767204 /* addnewaccount.swift */; };
+		FC65D5FF29F5DE9400767204 /* profileview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D5FE29F5DE9400767204 /* profileview.swift */; };
+		FC65D60129F5DEAD00767204 /* editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60029F5DEAD00767204 /* editing.swift */; };
+		FC65D60329F5DECA00767204 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60229F5DECA00767204 /* Followers.swift */; };
+		FC65D60629F5DF7100767204 /* notificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60529F5DF7100767204 /* notificationView.swift */; };
+		FC65D60929F5E2D500767204 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60829F5E2D500767204 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,16 @@
 		FC65D5E629F5DB8000767204 /* ENUMVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENUMVIEW.swift; sourceTree = "<group>"; };
 		FC65D5E929F5DBD600767204 /* STATUSVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STATUSVIEW.swift; sourceTree = "<group>"; };
 		FC65D5EB29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSTAGRAMtOPVIEW.swift; sourceTree = "<group>"; };
+		FC65D5EE29F5DD6F00767204 /* SEARCHVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEARCHVIEW.swift; sourceTree = "<group>"; };
+		FC65D5F029F5DD8D00767204 /* GRID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRID.swift; sourceTree = "<group>"; };
+		FC65D5F529F5DDF000767204 /* uploadview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadview.swift; sourceTree = "<group>"; };
+		FC65D5F829F5DE0C00767204 /* Reels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reels.swift; sourceTree = "<group>"; };
+		FC65D5FB29F5DE6400767204 /* addnewaccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addnewaccount.swift; sourceTree = "<group>"; };
+		FC65D5FE29F5DE9400767204 /* profileview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileview.swift; sourceTree = "<group>"; };
+		FC65D60029F5DEAD00767204 /* editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editing.swift; sourceTree = "<group>"; };
+		FC65D60229F5DECA00767204 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
+		FC65D60529F5DF7100767204 /* notificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationView.swift; sourceTree = "<group>"; };
+		FC65D60829F5E2D500767204 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +91,9 @@
 			children = (
 				FC65D5CB29F5DA8900767204 /* CLONEApp.swift */,
 				FC65D5CD29F5DA8900767204 /* ContentView.swift */,
-				FC65D5D929F5DA9100767204 /* VIEWS */,
 				FC65D5CF29F5DA8A00767204 /* Assets.xcassets */,
+				FC65D5D929F5DA9100767204 /* VIEWS */,
+				FC65D5FA29F5DE1400767204 /* profileview */,
 				FC65D5D129F5DA8A00767204 /* Preview Content */,
 			);
 			path = CLONE;
@@ -96,7 +117,12 @@
 				FC65D5E229F5DB4900767204 /* symbolview.swift */,
 				FC65D5E429F5DB5B00767204 /* symbolview2.swift */,
 				FC65D5E629F5DB8000767204 /* ENUMVIEW.swift */,
+				FC65D60729F5E2BD00767204 /* Main */,
 				FC65D5E829F5DBA800767204 /* STATUS */,
+				FC65D5ED29F5DD5600767204 /* SERACHVIEW */,
+				FC65D5F229F5DDC000767204 /* UPLOAD */,
+				FC65D5F729F5DE0000767204 /* Reels */,
+				FC65D60429F5DF5500767204 /* notificationview */,
 			);
 			path = VIEWS;
 			sourceTree = "<group>";
@@ -108,6 +134,66 @@
 				FC65D5EB29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift */,
 			);
 			path = STATUS;
+			sourceTree = "<group>";
+		};
+		FC65D5ED29F5DD5600767204 /* SERACHVIEW */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D5EE29F5DD6F00767204 /* SEARCHVIEW.swift */,
+				FC65D5F029F5DD8D00767204 /* GRID.swift */,
+			);
+			path = SERACHVIEW;
+			sourceTree = "<group>";
+		};
+		FC65D5F229F5DDC000767204 /* UPLOAD */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D5F529F5DDF000767204 /* uploadview.swift */,
+			);
+			path = UPLOAD;
+			sourceTree = "<group>";
+		};
+		FC65D5F729F5DE0000767204 /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D5F829F5DE0C00767204 /* Reels.swift */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		FC65D5FA29F5DE1400767204 /* profileview */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D5FB29F5DE6400767204 /* addnewaccount.swift */,
+				FC65D5FD29F5DE8700767204 /* profile */,
+			);
+			path = profileview;
+			sourceTree = "<group>";
+		};
+		FC65D5FD29F5DE8700767204 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D5FE29F5DE9400767204 /* profileview.swift */,
+				FC65D60029F5DEAD00767204 /* editing.swift */,
+				FC65D60229F5DECA00767204 /* Followers.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		FC65D60429F5DF5500767204 /* notificationview */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D60529F5DF7100767204 /* notificationView.swift */,
+			);
+			path = notificationview;
+			sourceTree = "<group>";
+		};
+		FC65D60729F5E2BD00767204 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D60829F5E2D500767204 /* Main.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,17 +266,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC65D5F929F5DE0C00767204 /* Reels.swift in Sources */,
+				FC65D5F129F5DD8D00767204 /* GRID.swift in Sources */,
+				FC65D5FF29F5DE9400767204 /* profileview.swift in Sources */,
+				FC65D5EF29F5DD6F00767204 /* SEARCHVIEW.swift in Sources */,
+				FC65D60129F5DEAD00767204 /* editing.swift in Sources */,
 				FC65D5CE29F5DA8900767204 /* ContentView.swift in Sources */,
 				FC65D5E129F5DB1500767204 /* frameview2.swift in Sources */,
+				FC65D60629F5DF7100767204 /* notificationView.swift in Sources */,
 				FC65D5DB29F5DAA400767204 /* Home.swift in Sources */,
 				FC65D5E729F5DB8000767204 /* ENUMVIEW.swift in Sources */,
 				FC65D5EA29F5DBD600767204 /* STATUSVIEW.swift in Sources */,
 				FC65D5DD29F5DAC400767204 /* postview.swift in Sources */,
+				FC65D60929F5E2D500767204 /* Main.swift in Sources */,
 				FC65D5DF29F5DAF800767204 /* postinfo.swift in Sources */,
 				FC65D5EC29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift in Sources */,
 				FC65D5CC29F5DA8900767204 /* CLONEApp.swift in Sources */,
+				FC65D5F629F5DDF000767204 /* uploadview.swift in Sources */,
 				FC65D5E329F5DB4900767204 /* symbolview.swift in Sources */,
+				FC65D5FC29F5DE6400767204 /* addnewaccount.swift in Sources */,
 				FC65D5E529F5DB5B00767204 /* symbolview2.swift in Sources */,
+				FC65D60329F5DECA00767204 /* Followers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
