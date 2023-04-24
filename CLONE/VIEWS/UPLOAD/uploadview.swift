@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct uploadview: View {
+    
+    @ObservedObject var viewmodel = Authviewmodel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                viewmodel.signout()
+                print("logout")
+            } label: {
+                Text("signout")
+            }
+
+            
+            
+        }
     }
 }
 
