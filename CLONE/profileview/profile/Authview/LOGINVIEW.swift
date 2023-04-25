@@ -10,6 +10,7 @@ import SwiftUI
 struct LOGINVIEW: View {
     @State var Email = ""
     @State var password = ""
+    @ObservedObject var viewmodel = Authviewmodel()
     var body: some View {
         
         
@@ -31,7 +32,7 @@ struct LOGINVIEW: View {
                 
                 
                 Button {
-                    
+                    viewmodel.login(Email:Email, password: password)
                 } label: {
                     Text("Login")
                         .foregroundColor(.white)
@@ -57,7 +58,7 @@ struct LOGINVIEW: View {
                 
                 
                 NavigationLink {
-                    
+                    signup()
                 } label: {
                     Text("Login with Facebook").bold()
                         .foregroundColor(.blue)

@@ -39,7 +39,7 @@ struct signup: View {
             Button {
                 viewmodel.signin(Email:email, password:password, username:username)
             } label: {
-                Text("Login")
+                Text("signup")
                     .foregroundColor(.white)
                     .frame(width: 320,height: 10)
                     .padding()

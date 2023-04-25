@@ -6,17 +6,19 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct Homeview: View {
     @State var instasheet = false
     @State var arrowdown = false
+    @ObservedObject var viewmodel = fetchposts()
     var body: some View {
         NavigationView() {
             ScrollView {
                 statusview()
                 
-                ForEach(0...10,id:\.self) {item in
-                    POSTVIEW()
+                ForEach(viewmodel.posts) {item in
+                    POSTVIEW(post:item)
                     
                     
                 }

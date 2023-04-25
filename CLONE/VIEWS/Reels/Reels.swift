@@ -7,8 +7,19 @@
 import SwiftUI
 
 struct Reels: View {
+    @ObservedObject var viewmodel = Authviewmodel()
     var body: some View {
-        Text("Reels view")
+        VStack {
+            Button {
+                viewmodel.signout()
+                print("logout")
+            } label: {
+                Text("signout")
+            }
+
+            
+            
+        }
     }
 }
 

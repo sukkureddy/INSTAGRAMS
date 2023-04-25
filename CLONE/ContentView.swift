@@ -9,16 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewmodel = Authviewmodel()
+    @ObservedObject var viewmodel1 = searchviewmodel()
     var body: some View {
         Group {
             
-            if viewmodel.usersession != nil {
-               Main()
+            if viewmodel.usersession == nil {
+                
+              LOGINVIEW()
                 
             }
             else {
-                
-            signup()
+                if let user = viewmodel.currentUser {
+                    Main(user:user)
+                }
+        
                
             }
             

@@ -16,9 +16,14 @@ class Authviewmodel:ObservableObject {
     
     
     @Published var usersession : FirebaseAuth.User?
+    @Published var currentUser:User?
+    
+    
+    static let shared  = Authviewmodel()
     
     init() {
         usersession = Auth.auth().currentUser
+        fetchuser()
     }
     
     
@@ -59,7 +64,20 @@ class Authviewmodel:ObservableObject {
         
     }
     
-    func login() {
+    func login(Email:String,password:String) {
+        
+        Auth.auth().signIn(withEmail:Email, password:password) {result,error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            guard let user  = result?.user else { return }
+            self.usersession = user
+            
+            
+        }
         
    
         
@@ -70,6 +88,26 @@ class Authviewmodel:ObservableObject {
            try? Auth.auth().signOut()
       
        
+    }
+    
+    
+    func fetchuser() {
+        
+        guard let uid = usersession?.uid else { return }
+        
+        Firestore.firestore().collection("users").document(uid).getDocument { query,error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            guard let user = try? query?.data(as:User.self) else { return }
+            self.currentUser = user
+        }
+        
+        
+        
+        
     }
     
     

@@ -13,10 +13,13 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct POSTVIEW: View {
     @State var following  = false
     @State var ispresented = false
+    @State var tagpeople = false
+    let post:UploadModel
     
     var body: some View {
         VStack(alignment:.leading){
@@ -27,7 +30,7 @@ struct POSTVIEW: View {
                         .frame(width: 40,height: 40)
                         .clipShape(Circle())
                     VStack(alignment:.leading){
-                        Text("Recheal")
+                        Text(post.name)
                             .font(.callout)
                             .bold()
                         
@@ -71,9 +74,26 @@ struct POSTVIEW: View {
                     
                 }
                 
-                
-                Image("pooja").resizable()
-                    .scaledToFit()
+                ZStack(alignment:.bottomLeading){
+                    
+                    KFImage(URL(string:post.photo ?? "")).resizable()
+                        .scaledToFit()
+                    Button {
+                        tagpeople.toggle()
+                    } label: {
+                        Image(systemName:"person.circle").resizable()
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .frame(width:20,height: 20)
+                            .padding(10)
+                            .background(Color.gray.opacity(0.6))
+                            .clipShape(Circle())
+                            
+                    }.sheet(isPresented:$tagpeople) {
+                        od(post:post)
+                    }
+                    
+                }
             }
                 
             
@@ -90,11 +110,11 @@ struct POSTVIEW: View {
     }
 }
 
-struct POSTVIEW_Previews: PreviewProvider {
-    static var previews: some View {
-        POSTVIEW()
-    }
-}
+//struct POSTVIEW_Previews: PreviewProvider {
+//    static var previews: some View {
+//        POSTVIEW()
+//    }
+//}
 
 struct LMS: View {
     var body: some View {

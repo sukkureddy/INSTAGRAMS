@@ -14,16 +14,21 @@ import SwiftUI
 struct Profileview: View {
     @State var alertview = false
     @State var logout = false
+    let user:User
+    
+     
     var body: some View {
         NavigationView() {
             VStack(alignment:.leading){
                 
-                ProfileHeader(alterview:$alertview)
+                ProfileHeader(alterview:$alertview, user:user)
                 
                 
+                countview(user:user)
                 
-                
-                CountView()
+//                CountView()
+//
+//                profilebutton(user:user)
                 
                 
                 
@@ -75,14 +80,15 @@ struct Profileview: View {
 
 
 
-struct Profileview_Previews: PreviewProvider {
-    static var previews: some View {
-        Profileview()
-    }
-}
+//struct Profileview_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Profileview()
+//    }
+//}
 
 struct ProfileHeader: View {
     @Binding var alterview:Bool
+    let user:User
     var body: some View {
         HStack {
             VStack(alignment:.leading){
@@ -133,7 +139,7 @@ struct ProfileHeader: View {
                     
                 }
                 
-                Text("Rachel Adams").bold()
+                Text(user.Email).bold()
                 
                 
             }.padding(.horizontal,7)
