@@ -30,6 +30,8 @@ class uploadviewmodel :ObservableObject {
                          "caption":caption,
                          "Time":Timestamp(date:Date()),
                          "name":user.username,
+                         "Likes":0,
+                         "didLike":false,
                          "Tag":taggedusers.map({$0.username})
             
             

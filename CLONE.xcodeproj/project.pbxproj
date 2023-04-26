@@ -56,6 +56,8 @@
 		FC65D65129F737AB00767204 /* Tagpeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65029F737AB00767204 /* Tagpeople.swift */; };
 		FC65D65529F745F700767204 /* taggedsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65429F745F700767204 /* taggedsheet.swift */; };
 		FC65D65729F74AAB00767204 /* od.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65629F74AAB00767204 /* od.swift */; };
+		FC65D65A29F8427400767204 /* Likes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65929F8427400767204 /* Likes.swift */; };
+		FC65D65D29F8A01100767204 /* commentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65C29F8A01100767204 /* commentview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,8 @@
 		FC65D65029F737AB00767204 /* Tagpeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagpeople.swift; sourceTree = "<group>"; };
 		FC65D65429F745F700767204 /* taggedsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taggedsheet.swift; sourceTree = "<group>"; };
 		FC65D65629F74AAB00767204 /* od.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = od.swift; sourceTree = "<group>"; };
+		FC65D65929F8427400767204 /* Likes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Likes.swift; sourceTree = "<group>"; };
+		FC65D65C29F8A01100767204 /* commentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 				FC65D5E629F5DB8000767204 /* ENUMVIEW.swift */,
 				FC65D65429F745F700767204 /* taggedsheet.swift */,
 				FC65D65629F74AAB00767204 /* od.swift */,
+				FC65D65B29F89FFA00767204 /* CommentView */,
 				FC65D60729F5E2BD00767204 /* Main */,
 				FC65D5E829F5DBA800767204 /* STATUS */,
 				FC65D5ED29F5DD5600767204 /* SERACHVIEW */,
@@ -211,6 +216,7 @@
 		FC65D5F229F5DDC000767204 /* UPLOAD */ = {
 			isa = PBXGroup;
 			children = (
+				FC65D65829F840E400767204 /* Likes */,
 				FC65D64629F724EF00767204 /* uploadviewmodel */,
 				FC65D5F529F5DDF000767204 /* uploadview.swift */,
 			);
@@ -311,6 +317,22 @@
 			path = uploadviewmodel;
 			sourceTree = "<group>";
 		};
+		FC65D65829F840E400767204 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D65929F8427400767204 /* Likes.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
+		FC65D65B29F89FFA00767204 /* CommentView */ = {
+			isa = PBXGroup;
+			children = (
+				FC65D65C29F8A01100767204 /* commentview.swift */,
+			);
+			path = CommentView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,8 +420,10 @@
 			files = (
 				FC65D65729F74AAB00767204 /* od.swift in Sources */,
 				FC65D63729F6F24900767204 /* User.swift in Sources */,
+				FC65D65D29F8A01100767204 /* commentview.swift in Sources */,
 				FC65D64429F71D3700767204 /* imagepickers.swift in Sources */,
 				FC65D64229F71D2E00767204 /* Firebasepicker.swift in Sources */,
+				FC65D65A29F8427400767204 /* Likes.swift in Sources */,
 				FC65D63929F6F2D000767204 /* fetchUserviewmodel.swift in Sources */,
 				FC65D5F929F5DE0C00767204 /* Reels.swift in Sources */,
 				FC65D5F129F5DD8D00767204 /* GRID.swift in Sources */,

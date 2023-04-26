@@ -97,7 +97,7 @@ struct POSTVIEW: View {
             }
                 
             
-            LMS()
+            LMS(viewmodel:LikeViweModel(post:post), post: post)
             
            commentsview()
             
@@ -117,11 +117,29 @@ struct POSTVIEW: View {
 //}
 
 struct LMS: View {
+    @ObservedObject var viewmodel : LikeViweModel
+   
+    var didLike:Bool{ viewmodel.post.didLike ?? false }
+    
+    init(viewmodel:LikeViweModel,post:UploadModel) {
+        self.viewmodel = viewmodel
+        
+    }
+    
+    
+    
     var body: some View {
         HStack {
-            Image(systemName:"heart")
+            Button {
+               didLike ? viewmodel.dislike() : viewmodel.Likepost()
+            } label: {
+                Image(systemName:didLike ? "heart" : "heart.fill")
+                    .foregroundColor(didLike ? Color.gray  : Color.red)
+                
+                    .font(.system(size: 20))
+            }
+
             
-                .font(.system(size: 20))
             Image(systemName:"message")
             
                 .font(.system(size: 20))
