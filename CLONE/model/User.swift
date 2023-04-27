@@ -19,6 +19,10 @@ struct User:Identifiable,Decodable,Equatable,Hashable {
     var currentuser:Bool {
         Authviewmodel.shared.usersession?.uid == id 
     }
+    var isfollowed:Bool? = false
+    var followers:Int
+    var following:Int
+   
     
     
 }

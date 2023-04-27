@@ -30,7 +30,6 @@
 		FC65D60329F5DECA00767204 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60229F5DECA00767204 /* Followers.swift */; };
 		FC65D60629F5DF7100767204 /* notificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60529F5DF7100767204 /* notificationView.swift */; };
 		FC65D60929F5E2D500767204 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D60829F5E2D500767204 /* Main.swift */; };
-		FC65D60B29F5E42100767204 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC65D60A29F5E42100767204 /* GoogleService-Info.plist */; };
 		FC65D61C29F5E57D00767204 /* LOGINVIEW.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D61B29F5E57D00767204 /* LOGINVIEW.swift */; };
 		FC65D62029F5E7ED00767204 /* GreatVibes-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC65D61F29F5E7ED00767204 /* GreatVibes-Regular.ttf */; };
 		FC65D62229F5F20900767204 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D62129F5F20900767204 /* signup.swift */; };
@@ -66,6 +65,14 @@
 		FC9FED8729F9D775005A92E3 /* commentreplyviewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8629F9D775005A92E3 /* commentreplyviewmodel.swift */; };
 		FC9FED8929F9F1D8005A92E3 /* commentreplymodel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8829F9F1D8005A92E3 /* commentreplymodel2.swift */; };
 		FC9FED8B29FA0044005A92E3 /* commentreply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8A29FA0043005A92E3 /* commentreply.swift */; };
+		FC9FED9129FAEF18005A92E3 /* followViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9029FAEF18005A92E3 /* followViewmodel.swift */; };
+		FC9FED9329FB0510005A92E3 /* profilefiltermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9229FB0510005A92E3 /* profilefiltermodel.swift */; };
+		FC9FED9529FB05C2005A92E3 /* profilefilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9429FB05C2005A92E3 /* profilefilter.swift */; };
+		FC9FED9729FB0A80005A92E3 /* gridownphotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9629FB0A80005A92E3 /* gridownphotos.swift */; };
+		FC9FED9B29FB1995005A92E3 /* fetchgridphotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9A29FB1995005A92E3 /* fetchgridphotos.swift */; };
+		FC9FED9D29FB22C2005A92E3 /* savedphotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9C29FB22C2005A92E3 /* savedphotos.swift */; };
+		FC9FED9F29FB2660005A92E3 /* fetchsavedphotosgrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED9E29FB2660005A92E3 /* fetchsavedphotosgrid.swift */; };
+		FCAFC40529FB2C5900594A5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCAFC40429FB2C5900594A5A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,8 +100,6 @@
 		FC65D60229F5DECA00767204 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
 		FC65D60529F5DF7100767204 /* notificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationView.swift; sourceTree = "<group>"; };
 		FC65D60829F5E2D500767204 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		FC65D60A29F5E42100767204 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FC65D60C29F5E42700767204 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC65D61B29F5E57D00767204 /* LOGINVIEW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOGINVIEW.swift; sourceTree = "<group>"; };
 		FC65D61E29F5E65D00767204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FC65D61F29F5E7ED00767204 /* GreatVibes-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.ttf"; sourceTree = "<group>"; };
@@ -124,6 +129,14 @@
 		FC9FED8629F9D775005A92E3 /* commentreplyviewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentreplyviewmodel.swift; sourceTree = "<group>"; };
 		FC9FED8829F9F1D8005A92E3 /* commentreplymodel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentreplymodel2.swift; sourceTree = "<group>"; };
 		FC9FED8A29FA0043005A92E3 /* commentreply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentreply.swift; sourceTree = "<group>"; };
+		FC9FED9029FAEF18005A92E3 /* followViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followViewmodel.swift; sourceTree = "<group>"; };
+		FC9FED9229FB0510005A92E3 /* profilefiltermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilefiltermodel.swift; sourceTree = "<group>"; };
+		FC9FED9429FB05C2005A92E3 /* profilefilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilefilter.swift; sourceTree = "<group>"; };
+		FC9FED9629FB0A80005A92E3 /* gridownphotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridownphotos.swift; sourceTree = "<group>"; };
+		FC9FED9A29FB1995005A92E3 /* fetchgridphotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchgridphotos.swift; sourceTree = "<group>"; };
+		FC9FED9C29FB22C2005A92E3 /* savedphotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedphotos.swift; sourceTree = "<group>"; };
+		FC9FED9E29FB2660005A92E3 /* fetchsavedphotosgrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchsavedphotosgrid.swift; sourceTree = "<group>"; };
+		FCAFC40429FB2C5900594A5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +184,8 @@
 				FC65D63429F6F21900767204 /* model */,
 				FC65D63529F6F22500767204 /* viewmodels */,
 				FC65D5D929F5DA9100767204 /* VIEWS */,
+				FC9FED8F29FAEEB9005A92E3 /* Followers */,
+				FC9FED8E29FAEE9F005A92E3 /* Following  */,
 				FC65D5FA29F5DE1400767204 /* profileview */,
 				FC65D5D129F5DA8A00767204 /* Preview Content */,
 			);
@@ -180,7 +195,6 @@
 		FC65D5D129F5DA8A00767204 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FC65D60A29F5E42100767204 /* GoogleService-Info.plist */,
 				FC65D5D229F5DA8A00767204 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -252,7 +266,6 @@
 			children = (
 				FC65D5FB29F5DE6400767204 /* addnewaccount.swift */,
 				FC65D5FD29F5DE8700767204 /* profile */,
-				FC65D60C29F5E42700767204 /* GoogleService-Info.plist */,
 			);
 			path = profileview;
 			sourceTree = "<group>";
@@ -261,10 +274,17 @@
 			isa = PBXGroup;
 			children = (
 				FC65D5FE29F5DE9400767204 /* profileview.swift */,
+				FC9FED9229FB0510005A92E3 /* profilefiltermodel.swift */,
 				FC65D60029F5DEAD00767204 /* editing.swift */,
 				FC65D60229F5DECA00767204 /* Followers.swift */,
 				FC65D63C29F703AD00767204 /* profilebutton.swift */,
 				FC65D63E29F709AD00767204 /* countview.swift */,
+				FC9FED9429FB05C2005A92E3 /* profilefilter.swift */,
+				FC9FED9629FB0A80005A92E3 /* gridownphotos.swift */,
+				FC9FED9E29FB2660005A92E3 /* fetchsavedphotosgrid.swift */,
+				FC9FED9A29FB1995005A92E3 /* fetchgridphotos.swift */,
+				FC9FED9C29FB22C2005A92E3 /* savedphotos.swift */,
+				FCAFC40429FB2C5900594A5A /* GoogleService-Info.plist */,
 				FC65D61A29F5E54500767204 /* Authview */,
 			);
 			path = profile;
@@ -365,6 +385,21 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		FC9FED8E29FAEE9F005A92E3 /* Following  */ = {
+			isa = PBXGroup;
+			children = (
+				FC9FED9029FAEF18005A92E3 /* followViewmodel.swift */,
+			);
+			path = "Following ";
+			sourceTree = "<group>";
+		};
+		FC9FED8F29FAEEB9005A92E3 /* Followers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Followers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,8 +473,8 @@
 			files = (
 				FC65D5D329F5DA8A00767204 /* Preview Assets.xcassets in Resources */,
 				FC65D62029F5E7ED00767204 /* GreatVibes-Regular.ttf in Resources */,
+				FCAFC40529FB2C5900594A5A /* GoogleService-Info.plist in Resources */,
 				FC65D5D029F5DA8A00767204 /* Assets.xcassets in Resources */,
-				FC65D60B29F5E42100767204 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,13 +490,16 @@
 				FC65D65D29F8A01100767204 /* commentview.swift in Sources */,
 				FC65D64429F71D3700767204 /* imagepickers.swift in Sources */,
 				FC65D64229F71D2E00767204 /* Firebasepicker.swift in Sources */,
+				FC9FED9F29FB2660005A92E3 /* fetchsavedphotosgrid.swift in Sources */,
 				FC65D65A29F8427400767204 /* Likes.swift in Sources */,
 				FC65D63929F6F2D000767204 /* fetchUserviewmodel.swift in Sources */,
 				FC65D5F929F5DE0C00767204 /* Reels.swift in Sources */,
 				FC65D5F129F5DD8D00767204 /* GRID.swift in Sources */,
+				FC9FED9129FAEF18005A92E3 /* followViewmodel.swift in Sources */,
 				FC65D5FF29F5DE9400767204 /* profileview.swift in Sources */,
 				FC65D62229F5F20900767204 /* signup.swift in Sources */,
 				FC65D63329F6F1A100767204 /* usersearchview.swift in Sources */,
+				FC9FED9729FB0A80005A92E3 /* gridownphotos.swift in Sources */,
 				FC9FED8B29FA0044005A92E3 /* commentreply.swift in Sources */,
 				FC9FED8929F9F1D8005A92E3 /* commentreplymodel2.swift in Sources */,
 				FC65D62429F6122F00767204 /* Authviewmodel.swift in Sources */,
@@ -469,6 +507,7 @@
 				FC65D63B29F6F4EC00767204 /* allusers.swift in Sources */,
 				FC65D65529F745F700767204 /* taggedsheet.swift in Sources */,
 				FC65D5EF29F5DD6F00767204 /* SEARCHVIEW.swift in Sources */,
+				FC9FED9D29FB22C2005A92E3 /* savedphotos.swift in Sources */,
 				FC9FED8129F9B3E8005A92E3 /* commentmodel.swift in Sources */,
 				FC9FED7F29F98DCB005A92E3 /* commentviewmodel.swift in Sources */,
 				FC65D60129F5DEAD00767204 /* editing.swift in Sources */,
@@ -483,6 +522,7 @@
 				FC65D5DD29F5DAC400767204 /* postview.swift in Sources */,
 				FC65D60929F5E2D500767204 /* Main.swift in Sources */,
 				FC65D65F29F982AA00767204 /* onecomment.swift in Sources */,
+				FC9FED9529FB05C2005A92E3 /* profilefilter.swift in Sources */,
 				FC65D64C29F72FFE00767204 /* fetchposts.swift in Sources */,
 				FC65D5DF29F5DAF800767204 /* postinfo.swift in Sources */,
 				FC65D5EC29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift in Sources */,
@@ -493,9 +533,11 @@
 				FC65D64829F7250E00767204 /* uploadmodel.swift in Sources */,
 				FC65D64A29F726BF00767204 /* uploadviewmodel.swift in Sources */,
 				FC65D63D29F703AD00767204 /* profilebutton.swift in Sources */,
+				FC9FED9B29FB1995005A92E3 /* fetchgridphotos.swift in Sources */,
 				FC65D5E329F5DB4900767204 /* symbolview.swift in Sources */,
 				FC65D5FC29F5DE6400767204 /* addnewaccount.swift in Sources */,
 				FC65D5E529F5DB5B00767204 /* symbolview2.swift in Sources */,
+				FC9FED9329FB0510005A92E3 /* profilefiltermodel.swift in Sources */,
 				FC65D61C29F5E57D00767204 /* LOGINVIEW.swift in Sources */,
 				FC65D60329F5DECA00767204 /* Followers.swift in Sources */,
 			);

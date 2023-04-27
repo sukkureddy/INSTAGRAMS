@@ -76,7 +76,7 @@ struct LOGINVIEW: View {
                 
                 
                 NavigationLink {
-                    
+                    signup()
                 } label: {
                     Text("sign up").bold()
                         .foregroundColor(.blue)

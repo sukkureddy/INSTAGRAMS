@@ -8,23 +8,33 @@
 import SwiftUI
 
 struct commentview: View {
-    @ObservedObject var viewmodel : commentviewmodel
-//    @ObservedObject var viewmodel1  :  commentreplyviewmodel
+//    @ObservedObject var viewmodel : commentviewmodel
+////    @ObservedObject var viewmodel1  :  commentreplyviewmodel
 //    @ObservedObject var viewmodel2 : RRR
-    
-   
-    @State var comment  = ""
-    let post:UploadModel
-   
-    
-    init(post:UploadModel) {
-        self.post = post
-        self.viewmodel = commentviewmodel(post:post)
-//        self.viewmodel1 = commentreplyviewmodel(reply:comment, post: post)
-//        self.viewmodel2 = RRR(post:post)
-        
-        
-    }
+//
+//
+//    @State var comment  = ""
+//    let post:UploadModel
+//
+//
+//    init(post:UploadModel) {
+//        self.post = post
+//        self.viewmodel = commentviewmodel(post:post)
+////        self.viewmodel1 = commentreplyviewmodel(reply:comment, post: post)
+//        self.viewmodel2 = RRR(post:post, reply:post.comment?[0] ?? comments(comment:"", user: "", reply:""))
+//
+//
+//    }
+    @ObservedObject var viewmodel: commentviewmodel
+//       @ObservedObject var viewmodel2: RRR
+       @State var comment = ""
+       let post: UploadModel
+       
+       init(post: UploadModel) {
+           self.post = post
+           self.viewmodel = commentviewmodel(post: post)
+//           self.viewmodel2 = RRR(post: post, reply:post.comment[0])!
+       }
     
     var body: some View {
         
@@ -36,12 +46,14 @@ struct commentview: View {
                    ForEach(viewmodel.coment,id:\.self) { item in
                        onecomment1(comment:item, post:post)
                        
-//                       if item.reply {
+                       if item.reply {
 //                           ForEach(viewmodel2.commentreplys,id:\.self) {item in
-//                               CommentsExperimentview(reply:item)
-//                           }
-////
-//                       }
+//                             CommentsExperimentview(reply:item)
+                           
+                           Text("there are replys for this post ")
+                           
+
+                       }
                        
                              
                        

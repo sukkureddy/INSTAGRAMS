@@ -8,7 +8,18 @@
 import SwiftUI
 
 struct countview: View {
+    @ObservedObject var viewmodel:followviewmodel
     let user:User
+    init(viewmodel: followviewmodel, user: User) {
+        self.viewmodel = followviewmodel(user:user)
+        self.user = user
+        
+    }
+    
+    var isfollowed:Bool {
+        viewmodel.user.isfollowed ?? false
+    }
+    
     var body: some View {
         if !user.currentuser {
             HStack {
@@ -29,10 +40,10 @@ struct countview: View {
                 
                 
                 Button {
-                    
+                    viewmodel.followusers()
                 } label: {
-                    Text("Share profile")
-                        .foregroundColor(.black)
+                    Text(isfollowed ? "Following" : "Follow")
+                        .foregroundColor(isfollowed ? .black : .blue)
                         .bold()
                         .frame(width: 120,height: 10)
                         .padding(10)

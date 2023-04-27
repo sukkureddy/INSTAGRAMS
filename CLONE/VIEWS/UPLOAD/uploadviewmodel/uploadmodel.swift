@@ -18,10 +18,12 @@ struct UploadModel:Identifiable,Decodable,Hashable{
     var photo:String?
     var caption:String
     var name:String
-    var Time:Timestamp
+    var Time:Timestamp?
     var Tag:[String]?
     var didLike:Bool? = false
     var Likes:Int
+    var comment:[comments]?
+    var commentrely:[commentReply]?
  
     
     

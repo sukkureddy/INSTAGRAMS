@@ -14,6 +14,7 @@ import Firebase
 class searchviewmodel:ObservableObject {
     
     @Published var user = [User]()
+    @Published var posts = [UploadModel]()
     
     
     
@@ -37,6 +38,28 @@ class searchviewmodel:ObservableObject {
           
             
             print(" users list are \(self.user)")
+            
+            
+        }
+        
+    }
+    
+    
+    func fetchposts() {
+        
+        guard let currentid = Authviewmodel.shared.currentUser?.id else { return }
+        
+        Firestore.firestore().collection("users").document(currentid).collection("posts").getDocuments { photos, error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+          
+            guard let douc  = photos?.documents else { return }
+            self.posts = douc.compactMap({try? $0.data(as:UploadModel.self)})
+            
+            print("\(self.posts)")
             
             
         }

@@ -41,10 +41,10 @@ class uploadviewmodel :ObservableObject {
             
            
             
-            Firestore.firestore().collection("users").document(uid).collection("posts").addDocument(data:data) {_ in
+            Firestore.firestore().collection("users").document(uid).collection("posts").document().setData(data) {_ in
                 
                 
-                Firestore.firestore().collection("posts").addDocument(data: data) {_ in
+                Firestore.firestore().collection("posts").addDocument(data:data) {_ in
                     
                     
                     
@@ -82,6 +82,11 @@ class uploadviewmodel :ObservableObject {
 //        
 //        
 //    }
+    
+    
+    
+    
+    
     
     
     

@@ -14,6 +14,8 @@ import Firebase
 
 class fetchposts:ObservableObject {
     @Published var posts  = [UploadModel]()
+    @Published var posts1  = [UploadModel]()
+   
     
     
     init() {
@@ -38,6 +40,26 @@ class fetchposts:ObservableObject {
             
             
         }
+        
+    }
+    
+    
+    
+    func fetchuserpost() {
+        
+        guard let user = Authviewmodel.shared.currentUser?.id else{ return }
+        
+        
+                
+        Firestore.firestore().collection("posts").document(user).collection("DATA").getDocuments { query, error in
+            
+            guard let douc  = query?.documents else { return }
+            self.posts1 = douc.compactMap({try? $0.data(as:UploadModel.self)})
+            
+            print("user posts are grid \(self.posts1)")
+            
+        }
+        
         
     }
     

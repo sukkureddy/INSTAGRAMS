@@ -15,6 +15,7 @@ struct Profileview: View {
     @State var alertview = false
     @State var logout = false
     let user:User
+  
     
      
     var body: some View {
@@ -24,11 +25,15 @@ struct Profileview: View {
                 ProfileHeader(alterview:$alertview, user:user)
                 
                 
-                countview(user:user)
+                countview(viewmodel: followviewmodel(user:user), user:user)
                 
 //                CountView()
 //
 //                profilebutton(user:user)
+                
+                
+                profilefilter(user:user)
+                
                 
                 
                 
@@ -139,7 +144,7 @@ struct ProfileHeader: View {
                     
                 }
                 
-                Text(user.Email).bold()
+                Text(user.username).bold()
                 
                 
             }.padding(.horizontal,7)
@@ -155,7 +160,7 @@ struct ProfileHeader: View {
                 
                     NavigationLink(destination:Followers()) {
                         VStack {
-                            Text("296").bold()
+                            Text("\(user.followers)").bold()
                         Text("Followers")
                     }.foregroundColor(.black)
                     
@@ -165,7 +170,7 @@ struct ProfileHeader: View {
                 
                 NavigationLink(destination:Followers()) {
                     VStack {
-                        Text("311").bold()
+                        Text("\(user.following)").bold()
                         Text("Following")
                 }.foregroundColor(.black)
                         

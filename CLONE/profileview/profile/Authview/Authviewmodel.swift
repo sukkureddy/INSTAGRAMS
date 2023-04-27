@@ -43,7 +43,10 @@ class Authviewmodel:ObservableObject {
             
             let data = ["Email":Email,
                         "password":password,
-                        "username":username
+                        "username":username,
+                        "isfollowed":false,
+                        "followers":0,
+                        "following":0
              ]
             
             Firestore.firestore().collection("users").document(user.uid).setData(data) {_  in
@@ -53,6 +56,7 @@ class Authviewmodel:ObservableObject {
                 self.usersession = user
                 
                 print("user is done with registration")
+                
                 
                 
                 

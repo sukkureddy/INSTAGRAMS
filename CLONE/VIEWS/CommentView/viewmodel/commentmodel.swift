@@ -15,8 +15,9 @@ struct comments:Identifiable,Decodable,Hashable {
     @DocumentID var id:String?
     var  comment:String
     var user:String
-    var Time:Timestamp
+    var Time:Timestamp?
     var reply:Bool
+    var coomentreply:[commentReply]?
     
   
     
