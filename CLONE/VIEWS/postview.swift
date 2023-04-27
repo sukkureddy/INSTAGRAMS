@@ -20,6 +20,7 @@ struct POSTVIEW: View {
     @State var ispresented = false
     @State var tagpeople = false
     let post:UploadModel
+//    let comment:comments
     
     var body: some View {
         VStack(alignment:.leading){
@@ -99,7 +100,7 @@ struct POSTVIEW: View {
             
             LMS(viewmodel:LikeViweModel(post:post), post: post)
             
-           commentsview()
+           commentsview(post:post)
             
             
             
@@ -120,9 +121,12 @@ struct LMS: View {
     @ObservedObject var viewmodel : LikeViweModel
    
     var didLike:Bool{ viewmodel.post.didLike ?? false }
+//    let comment:comments
     
     init(viewmodel:LikeViweModel,post:UploadModel) {
         self.viewmodel = viewmodel
+        
+        
         
     }
     
@@ -139,10 +143,14 @@ struct LMS: View {
                     .font(.system(size: 20))
             }
 
+            NavigationLink {
+                commentview(post:viewmodel.post)
+            } label: {
+                Image(systemName:"message")
+                 .font(.system(size: 20))
+            }
+
             
-            Image(systemName:"message")
-            
-                .font(.system(size: 20))
             Image(systemName:"paperplane")
             
                 .font(.system(size: 20))
@@ -159,12 +167,13 @@ struct LMS: View {
 }
 
 struct commentsview: View {
+    let post:UploadModel
     var body: some View {
         VStack(alignment:.leading){
             Text("2,142 Likes").bold().font(.system(size:12)).padding(.top,4)
                 .padding(.horizontal,6)
             
-            Text("  Gouri_vineeth : ").font(.system(size: 10)).bold() + Text("hey,please dont share").font(.system(size:12))
+            Text("  Gouri_vineeth : ").font(.system(size: 10)).bold() + Text("\(post.caption)").font(.system(size:12))
             
             
              Text(" #hashtags").font(.system(size: 10))

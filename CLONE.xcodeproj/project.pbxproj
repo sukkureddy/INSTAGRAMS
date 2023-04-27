@@ -58,6 +58,14 @@
 		FC65D65729F74AAB00767204 /* od.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65629F74AAB00767204 /* od.swift */; };
 		FC65D65A29F8427400767204 /* Likes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65929F8427400767204 /* Likes.swift */; };
 		FC65D65D29F8A01100767204 /* commentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65C29F8A01100767204 /* commentview.swift */; };
+		FC65D65F29F982AA00767204 /* onecomment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D65E29F982AA00767204 /* onecomment.swift */; };
+		FC65D66129F987A700767204 /* coomentReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65D66029F987A700767204 /* coomentReply.swift */; };
+		FC9FED7F29F98DCB005A92E3 /* commentviewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED7E29F98DCB005A92E3 /* commentviewmodel.swift */; };
+		FC9FED8129F9B3E8005A92E3 /* commentmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8029F9B3E8005A92E3 /* commentmodel.swift */; };
+		FC9FED8529F9D1E5005A92E3 /* CommentsExperimentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8429F9D1E5005A92E3 /* CommentsExperimentview.swift */; };
+		FC9FED8729F9D775005A92E3 /* commentreplyviewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8629F9D775005A92E3 /* commentreplyviewmodel.swift */; };
+		FC9FED8929F9F1D8005A92E3 /* commentreplymodel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8829F9F1D8005A92E3 /* commentreplymodel2.swift */; };
+		FC9FED8B29FA0044005A92E3 /* commentreply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FED8A29FA0043005A92E3 /* commentreply.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +116,14 @@
 		FC65D65629F74AAB00767204 /* od.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = od.swift; sourceTree = "<group>"; };
 		FC65D65929F8427400767204 /* Likes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Likes.swift; sourceTree = "<group>"; };
 		FC65D65C29F8A01100767204 /* commentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentview.swift; sourceTree = "<group>"; };
+		FC65D65E29F982AA00767204 /* onecomment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onecomment.swift; sourceTree = "<group>"; };
+		FC65D66029F987A700767204 /* coomentReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coomentReply.swift; sourceTree = "<group>"; };
+		FC9FED7E29F98DCB005A92E3 /* commentviewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentviewmodel.swift; sourceTree = "<group>"; };
+		FC9FED8029F9B3E8005A92E3 /* commentmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentmodel.swift; sourceTree = "<group>"; };
+		FC9FED8429F9D1E5005A92E3 /* CommentsExperimentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsExperimentview.swift; sourceTree = "<group>"; };
+		FC9FED8629F9D775005A92E3 /* commentreplyviewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentreplyviewmodel.swift; sourceTree = "<group>"; };
+		FC9FED8829F9F1D8005A92E3 /* commentreplymodel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentreplymodel2.swift; sourceTree = "<group>"; };
+		FC9FED8A29FA0043005A92E3 /* commentreply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentreply.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,8 +345,24 @@
 			isa = PBXGroup;
 			children = (
 				FC65D65C29F8A01100767204 /* commentview.swift */,
+				FC65D65E29F982AA00767204 /* onecomment.swift */,
+				FC65D66029F987A700767204 /* coomentReply.swift */,
+				FC9FED7D29F98DB0005A92E3 /* viewmodel */,
 			);
 			path = CommentView;
+			sourceTree = "<group>";
+		};
+		FC9FED7D29F98DB0005A92E3 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				FC9FED7E29F98DCB005A92E3 /* commentviewmodel.swift */,
+				FC9FED8029F9B3E8005A92E3 /* commentmodel.swift */,
+				FC9FED8A29FA0043005A92E3 /* commentreply.swift */,
+				FC9FED8429F9D1E5005A92E3 /* CommentsExperimentview.swift */,
+				FC9FED8629F9D775005A92E3 /* commentreplyviewmodel.swift */,
+				FC9FED8829F9F1D8005A92E3 /* commentreplymodel2.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,25 +462,33 @@
 				FC65D5FF29F5DE9400767204 /* profileview.swift in Sources */,
 				FC65D62229F5F20900767204 /* signup.swift in Sources */,
 				FC65D63329F6F1A100767204 /* usersearchview.swift in Sources */,
+				FC9FED8B29FA0044005A92E3 /* commentreply.swift in Sources */,
+				FC9FED8929F9F1D8005A92E3 /* commentreplymodel2.swift in Sources */,
 				FC65D62429F6122F00767204 /* Authviewmodel.swift in Sources */,
 				FC65D63F29F709AD00767204 /* countview.swift in Sources */,
 				FC65D63B29F6F4EC00767204 /* allusers.swift in Sources */,
 				FC65D65529F745F700767204 /* taggedsheet.swift in Sources */,
 				FC65D5EF29F5DD6F00767204 /* SEARCHVIEW.swift in Sources */,
+				FC9FED8129F9B3E8005A92E3 /* commentmodel.swift in Sources */,
+				FC9FED7F29F98DCB005A92E3 /* commentviewmodel.swift in Sources */,
 				FC65D60129F5DEAD00767204 /* editing.swift in Sources */,
+				FC65D66129F987A700767204 /* coomentReply.swift in Sources */,
 				FC65D5CE29F5DA8900767204 /* ContentView.swift in Sources */,
 				FC65D5E129F5DB1500767204 /* frameview2.swift in Sources */,
 				FC65D60629F5DF7100767204 /* notificationView.swift in Sources */,
 				FC65D5DB29F5DAA400767204 /* Home.swift in Sources */,
 				FC65D5E729F5DB8000767204 /* ENUMVIEW.swift in Sources */,
+				FC9FED8529F9D1E5005A92E3 /* CommentsExperimentview.swift in Sources */,
 				FC65D5EA29F5DBD600767204 /* STATUSVIEW.swift in Sources */,
 				FC65D5DD29F5DAC400767204 /* postview.swift in Sources */,
 				FC65D60929F5E2D500767204 /* Main.swift in Sources */,
+				FC65D65F29F982AA00767204 /* onecomment.swift in Sources */,
 				FC65D64C29F72FFE00767204 /* fetchposts.swift in Sources */,
 				FC65D5DF29F5DAF800767204 /* postinfo.swift in Sources */,
 				FC65D5EC29F5DBF000767204 /* INSTAGRAMtOPVIEW.swift in Sources */,
 				FC65D5CC29F5DA8900767204 /* CLONEApp.swift in Sources */,
 				FC65D5F629F5DDF000767204 /* uploadview.swift in Sources */,
+				FC9FED8729F9D775005A92E3 /* commentreplyviewmodel.swift in Sources */,
 				FC65D65129F737AB00767204 /* Tagpeople.swift in Sources */,
 				FC65D64829F7250E00767204 /* uploadmodel.swift in Sources */,
 				FC65D64A29F726BF00767204 /* uploadviewmodel.swift in Sources */,

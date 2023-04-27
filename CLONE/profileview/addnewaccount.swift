@@ -32,12 +32,13 @@ struct TrYNewAccount: View {
             }
             
             VStack(alignment:.leading,spacing: 10) {
-                Text("Keep up with a smaller group oof friends").bold()
+                Text("Keep up with a smaller group of friends").bold()
+                    .padding(.horizontal,10)
                 
                 Text("create another account to stay in touch with a group of friends").font(.callout)
                     .foregroundColor(.gray.opacity(0.8))
-                
-                NewAccountButton()
+                    .padding(.horizontal,10)
+                NewAccountButton().padding(.horizontal,10)
                 
                 
                 
@@ -45,7 +46,7 @@ struct TrYNewAccount: View {
                 
 
                 
-            }.padding(.horizontal,20)
+            }.padding(.horizontal,30)
             Divider()
             HStack {
                 Spacer()

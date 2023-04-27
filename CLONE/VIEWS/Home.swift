@@ -12,6 +12,9 @@ struct Homeview: View {
     @State var instasheet = false
     @State var arrowdown = false
     @ObservedObject var viewmodel = fetchposts()
+    
+
+    
     var body: some View {
         NavigationView() {
             ScrollView {

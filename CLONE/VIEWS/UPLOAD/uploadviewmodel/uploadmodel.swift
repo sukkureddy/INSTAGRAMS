@@ -22,6 +22,7 @@ struct UploadModel:Identifiable,Decodable,Hashable{
     var Tag:[String]?
     var didLike:Bool? = false
     var Likes:Int
+ 
     
     
     
