@@ -119,14 +119,16 @@ struct POSTVIEW: View {
 
 struct LMS: View {
     @ObservedObject var viewmodel : LikeViweModel
-//    @ObservedObject var viewmodel2 : savedposts
+
+    @ObservedObject var viewmodel2:ssssss
    
     var didLike:Bool{ viewmodel.post.didLike ?? false }
-//    let comment:comments
+
     
     init(viewmodel:LikeViweModel,post:UploadModel) {
         self.viewmodel = viewmodel
-//        self.viewmodel2 = savedposts(user: <#T##User#>, post: <#T##UploadModel#>)
+        self.viewmodel2 = ssssss(post:post)
+        
         
         
         
@@ -161,7 +163,7 @@ struct LMS: View {
             
             
             Button {
-                
+                viewmodel2.ss()
             } label: {
                 Image(systemName:"bookmark")
                 

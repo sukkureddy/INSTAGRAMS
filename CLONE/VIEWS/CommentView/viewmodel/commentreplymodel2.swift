@@ -126,4 +126,23 @@ class RRR: ObservableObject {
             print("complet replayes \(self.commentreplys)")
         }
     }
+    
+    
+//    func ss() {
+//        
+//        guard let user = Authviewmodel.shared.currentUser?.id else { return }
+//        
+//        let data =  ["photo":post.photo
+//        
+//        
+//        ] as [String:Any]
+//        
+//        Firestore.firestore().collection("users").document(user).collection("saved").document().setData(data as [String : Any]) {_ in
+//            
+//            
+//            
+//            
+//        }
+//    }
+    
 }
